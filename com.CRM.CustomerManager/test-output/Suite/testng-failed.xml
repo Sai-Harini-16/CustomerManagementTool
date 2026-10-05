@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.CRM.CustomerManager.Practice.CreateOrgPractice2">
+        <methods>
+          <include name="createOrg"/>
+          <include name="createOrg1"/>
+          <include name="loginToCMT"/>
+          <include name="databaseConnected"/>
+          <include name="launchBrowser"/>
+          <include name="createOrg2"/>
+          <include name="disconnectFromDataBase"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.CRM.CustomerManager.Practice.CreateOrgPractice2 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.CRM.CustomerManager.Practice.CreateOrgPractice1">
+        <methods>
+          <include name="createOrg"/>
+          <include name="createOrg2"/>
+          <include name="loginToCMT"/>
+          <include name="databaseConnected"/>
+          <include name="launchBrowser"/>
+          <include name="disconnectFromDataBase"/>
+          <include name="createOrg1"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.CRM.CustomerManager.Practice.CreateOrgPractice1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
